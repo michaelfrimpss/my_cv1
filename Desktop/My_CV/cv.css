@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-image: url('bgImage/pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg');
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    color: Black;
+    height: 10vh;
+    color: #122448;
+    letter-spacing: 2px;
+/*     position: fixed; */
+    border-bottom: 1px solid #122448;
+    box-shadow: 0px 1px 2px 0px;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 32%;
+    z-index: 3;
+}
+
+#profile-pic {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.left-nav li p {
+    font-size: 25px;
+    line-height: 0;
+    font-family: Roboto,
+        sans-serif;
+}
+
+.social-links {
+    cursor: pointer;
+    border: none;
+    background-color: none;
+}
+
+#icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons li button a img {
+    background: white;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.right-nav li {
+    padding: 1rem;
+}
+
+#home-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+
+    letter-spacing: 2px;
+    color: rgb(61, 87, 117);
+    background-image: url('bgImage/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette.jpg');
+    border-bottom-right-radius: 100%;
+}
+
+#hi {
+    font-size: 50px;
+}
+
+div h1 img {
+    width: 45px;
+}
+
+#home-text {
+    margin-left: 1rem;
+}
+
+#home-section h3 {
+    font-size: 25px;
+    font-family: 'Zilla Slab Highlight', sans-serif;
+}
+
+.icons {
+    width: 20px;
+}
+
+#chatbot {
+    width: 550px;
+}
+
+#about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+#about-text {
+    width: 42ch;
+    color: #122448;
+    letter-spacing: 2px;
+}
+
+#about-text h2 {
+    font-size: 45px;
+}
+
+#guide-img {
+    width: 600px;
+}
+
+
+/*
+Work Section
+*/
+
+#work-section {
+    background: rgba(255, 238, 255, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #122448;
+}
+
+#work-section li {
+    margin-bottom: 1rem;
+    line-height: 20px;
+}
+
+#work-section h2 {
+    font-size: 42px;
+    margin-bottom: 1rem;
+}
+
+#work-img {
+    width: 460px;
+}
+
+.cert {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0;
+    color: #aaa;
+}
+
+
+/*
+Edu Section
+*/
+
+#edu-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    color: #122448;
+}
+
+#edu-text {
+    letter-spacing: 2px;
+}
+
+#edu-section h2 {
+    font-size: 42px;
+    margin-bottom: 1rem;
+}
+
+#edu-section ul li em {
+    font-size: 17px;
+}
+
+#edu-section li {
+    padding-bottom: 1rem;
+    line-height: 20px;
+}
+
+#edu-img {
+    width: 600px
+}
+
+/* 
+Skills Section
+*/
+#skills-section {
+    background: rgba(255, 238, 255, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    color: black;
+}
+
+#skills-text {
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    color: #122448;
+}
+
+#skills-text h2 {
+    padding: 10px;
+    font-size: 45px;
+}
+
+#skills-text p {
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+}
+
+#skills-text ul {
+    padding: 0px 10px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+#monitor-img {
+    width: 550px;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background: url("bgImage/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette.jpg");
+}
+
+@media only screen and (max-device-width: 700px) {
+    nav {
+        display: none;
+    }
+}
+
+
+@media screen and (max-device-width: 475px) {
+    #first-section {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #profile-p {
+        width: 100px;
+    }
+
+    .left-nav li p {
+        font-size: 70px;
+    }
+
+
+    #chatbot {
+        margin-top: 10rem;
+    }
+}
+
